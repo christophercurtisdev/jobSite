@@ -21,9 +21,15 @@
         "lab404/laravel-impersonate": "^1.4",
         "langleyfoxall/laravel-nist-password-rules": "^4.0",
         "laravel/framework": "^6.3",
+        "laravel/helpers": "^1.1",
+        "laravel/horizon": "^3.4",
+        "laravel/passport": "^8.2",
         "laravel/socialite": "^4.1",
+        "pqrs/l5b-crud": "^1.4",
         "spatie/laravel-html": "^2.22",
+        "spatie/laravel-medialibrary": "^7.0.0",
         "spatie/laravel-permission": "^3.0",
+        "spatie/laravel-query-builder": "^2.5",
         "torann/geoip": "^1.0"
     },
     "require-dev": {
