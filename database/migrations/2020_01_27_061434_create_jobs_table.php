@@ -14,6 +14,21 @@ class CreateJobsTable extends Migration
         Schema::create('jobs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name', 80);
+            $table->text('description')->nullable();
+            $table->integer('compensation');
+            $table->schemalessAttributes('extra_attributes')->nullable();
+            $table->unsignedInteger('job_compensation_type_id')->nullable();
+            $table->unsignedInteger('job_type_id');
+            $table->unsignedInteger('job_category_id');
+            $table->unsignedInteger('job_sub_category_id')->nullable();
+            $table->unsignedBigInteger('author_id');
+
+            $table->foreign('job_compensation_type_id')->references('id')->on('job_compensation_types');
+            $table->foreign('job_type_id')->references('id')->on('job_types');
+            $table->foreign('job_category_id')->references('id')->on('job_categories');
+            $table->foreign('author_id')->references('id')->on('users');
+            $table->foreign('job_sub_category_id')->references('id')->on('job_sub_categories');
+
             $table->softDeletes();
             $table->timestamps();
         });

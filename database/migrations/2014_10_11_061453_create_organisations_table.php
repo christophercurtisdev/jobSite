@@ -17,6 +17,11 @@ class CreateOrganisationsTable extends Migration
             Schema::create('organisations', function (Blueprint $table) {
                 $table->increments('id');
                 $table->text('name', 80);
+                $table->string('email');
+                $table->string('avatar_path')->nullable();
+                $table->unsignedBigInteger('admin_id'); //USER
+                
+                $table->schemalessAttributes('extra_attributes')->nullable();
                 $table->softDeletes();
                 $table->timestamps();
             });

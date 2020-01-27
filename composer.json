@@ -14,6 +14,7 @@
         "altek/accountant": "^1.2",
         "altek/eventually": "^1.0",
         "arcanedev/log-viewer": "^5.0",
+        "cknow/laravel-money": "^3.8",
         "creativeorange/gravatar": "~1.0",
         "davejamesmiller/laravel-breadcrumbs": "^5.0",
         "facade/ignition": "^1.11",
@@ -26,10 +27,12 @@
         "laravel/passport": "^8.2",
         "laravel/socialite": "^4.1",
         "pqrs/l5b-crud": "^1.4",
+        "socialiteproviders/linkedin": "^3.1",
         "spatie/laravel-html": "^2.22",
         "spatie/laravel-medialibrary": "^7.0.0",
         "spatie/laravel-permission": "^3.0",
         "spatie/laravel-query-builder": "^2.5",
+        "spatie/laravel-schemaless-attributes": "^1.6",
         "torann/geoip": "^1.0"
     },
     "require-dev": {

@@ -26,5 +26,9 @@ class Organisation extends Model
      */
     protected $fillable = [
         'name',
+        'email',
+        'avatar_path',
+        'extra_attributes',
+        'admin_id'
     ];
 }

@@ -13,3 +13,4 @@ require __DIR__.'/job.php';
 require __DIR__.'/organisation.php';
 require __DIR__.'/skill.php';
 require __DIR__.'/job_type.php';
+require __DIR__.'/job_compensation_type.php';

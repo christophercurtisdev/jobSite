@@ -12,6 +12,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Lab404\Impersonate\Models\Impersonate;
 use Spatie\Permission\Traits\HasRoles;
+use Laravel\Passport\HasApiTokens;
 
 /**
  * Class User.
@@ -25,6 +26,7 @@ abstract class BaseUser extends Authenticatable implements Recordable
         RecordableTrait,
         SendUserPasswordReset,
         SoftDeletes,
+        HasApiTokens,
         Uuid;
 
     /**
@@ -36,6 +38,7 @@ abstract class BaseUser extends Authenticatable implements Recordable
         'first_name',
         'last_name',
         'email',
+        'organisation_id',
         'avatar_type',
         'avatar_location',
         'password',

@@ -31,6 +31,10 @@ class CreateUsersTable extends Migration
             $table->timestamp('last_login_at')->nullable();
             $table->string('last_login_ip')->nullable();
             $table->boolean('to_be_logged_out')->default(false);
+            $table->unsignedInteger('organisation_id')->nullable();
+
+            $table->foreign('organisation_id')->references('id')->on('organisatons');
+
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

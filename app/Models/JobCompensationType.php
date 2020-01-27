@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-use App\Models\Traits\Attribute\JobAttribute;
+use App\Models\Traits\Attribute\JobCompensationTypeAttribute;
 
-class Job extends Model
+class JobCompensationType extends Model
 {
-    use JobAttribute,
+    use JobCompensationTypeAttribute,
         SoftDeletes;
 
     /**
@@ -25,13 +25,6 @@ class Job extends Model
      * @var array
      */
     protected $fillable = [
-        'name',
-        'description',
-        'compensation',
-        'extra_attributes',
-        'job_compensation_type_id',
-        'job_type_id',
-        'job_category_id',
-        'job_sub_category_id',
+        'title',
     ];
 }
